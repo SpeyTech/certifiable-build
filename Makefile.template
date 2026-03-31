@@ -57,6 +57,7 @@ release: ## Publish release artifacts
 update-build: ## Update certifiable-build git subtree
 	git subtree pull --prefix=certifiable-build \
 		https://github.com/SpeyTech/certifiable-build master \
+		-m "Update certifiable-build git subtree." \
 		--squash
 
 clean: ## Remove all build artifacts
